@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <center>
+    <h1>Relax 'n' Snacks</h1>
+  </center>
+  </div><center>
+  <marquee id="marquee" direction="left">Welcome to our site| <b> Relax 'n' Snacks </b>| Happy Shopping!!</marquee>
+</center>
+<div id="container">
+  <!-- section1 -->
+  <div class="section1">
+    <center>
+  <div class="div1">
+    <img src="lays.jpg" height="225px" width="125px">
+    <center>
+    <h3><b>Lays</b></h3>
+  </center>
+    <hr>
+    <center>
+      <strong>₹10</strong>
+      <button class="plus" onclick="add()">+</button>
+    <h2 id="lays">0</h2>
+    <button class="minus" onclick="sub()">-</button>
+  </center>
+  </div>
+  <!-- 3rd item -->
+  <div class="div1">
+    <img src="kurkure.jpg" height="225px" width="125px">
+    <center>
+    <h3><b>Kurkure</b></h3>
+  </center>
+    <hr>
+    <center>
+      <strong>₹10</strong>
+      <button class="plus" onclick="add2()">+</button>
+    <h2 id="kurkure">0</h2>
+    <button class="minus" onclick="sub2()">-</button>
+  </center>
+  </div>
+  <!-- 4rth item -->
+  <div class="div1">
+    <img src="bingo.jpg" height="225px" width="125px">
+    <center>
+    <h3><b>Bingo</b></h3>
+  </center>
+    <hr>
+    <center>
+      <strong>₹10</strong>
+      <button class="plus" onclick="add3()">+</button>
+    <h2 id="bingo">0</h2>
+    <button class="minus" onclick="sub3()">-</button>
+  </center>
+  </div>
+  <!-- 5th item -->
+  <div class="div1">
+    <img src="veg biriyani.jpg" height="225px" width="125px">
+    <center>
+    <h3><b>Veg Biriyani</b></h3>
+  </center>
+    <hr>
+    <center>
+      <strong>₹10</strong>
+      <button class="plus" onclick="add4()">+</button>
+    <h2 id="veg">0</h2>
+    <button class="minus" onclick="sub4()">-</button>
+  </center>
+  </div>
+  <!-- 6th item -->
+  <div class="div1">
+    <img src="mad angles.jpg" height="225px" width="125px">
+    <center>
+    <h3><b>Mad Angles</b></h3>
+  </center>
+    <hr>
+    <center>
+      <strong>₹10</strong>
+      <button class="plus" onclick="add5()">+</button>
+    <h2 id="mad">0</h2>
+    <button class="minus" onclick="sub5()">-</button>
+  </center>
+  </div>
+  <!-- 7th item -->
+  <div class="div1">
+    <img src="cheetos.jpg" height="225px" width="125px">
+    <center>
+    <h3><b>Cheetos</b></h3>
+  </center>
+    <hr>
+    <center>
+      <strong>₹10</strong>
+      <button class="plus" onclick="add6()">+</button>
+    <h2 id="cheetos">0</h2>
+    <button class="minus" onclick="sub6()">-</button>
+  </center>
+  </div></div></center></div></center>
+<!-- section2 -->
+<center>
+  <div class="section1">
+    <div class="div1">
+      <img src="miranda.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Miranda</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹40</strong>
+        <button class="plus" onclick="add7()">+</button>
+      <h2 id="miranda">0</h2>
+      <button class="minus" onclick="sub7()">-</button>
+    </center>
+    </div>
+    <!-- 2nd item -->
+    <div class="div1">
+      <img src="sprite.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Sprite</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹40</strong>
+        <button class="plus" onclick="add8()">+</button>
+      <h2 id="sprite">0</h2>
+      <button class="minus" onclick="sub8()">-</button>
+    </center>
+    </div>
+
+    <!-- 4rth item -->
+    <div class="div1">
+      <img src="7up.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>7 UP</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹40</strong>
+        <button class="plus" onclick="add9()">+</button>
+      <h2 id="7up">0</h2>
+      <button class="minus" onclick="sub9()">-</button>
+    </center>
+    </div>
+    <!-- 5th item -->
+    <div class="div1">
+      <img src="coke.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Coca Cola</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹40</strong>
+        <button class="plus" onclick="add10()">+</button>
+      <h2 id="coke">0</h2>
+      <button class="minus" onclick="sub10()">-</button>
+    </center>
+    </div>
+    <!-- 6th item -->
+    <div class="div1">
+      <img src="mountain dew.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Mountain Dew</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹40</strong>
+        <button class="plus" onclick="add11()">+</button>
+      <h2 id="dew">0</h2>
+      <button class="minus" onclick="sub11()">-</button>
+    </center>
+    </div>
+    <!-- 7th item -->
+    <div class="div1">
+      <img src="fizz.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Fizz</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹40</strong>
+        <button class="plus" onclick="add12()">+</button>
+      <h2 id="fizz">0</h2>
+      <button class="minus" onclick="sub12()">-</button>
+    </center>
+    </div></div></center></center>
+<!-- section3 -->
+    <center>
+      <div class="section1">
+        <div class="div1">
+          <img src="diary milk.jpg" height="225px" width="125px">
+          <center>
+          <h3><b>Diary Milk</b></h3>
+        </center>
+          <hr>
+          <center>
+            <strong>₹10</strong>
+            <button class="plus" onclick="add13()">+</button>
+          <h2 id="diary">0</h2>
+          <button class="minus" onclick="sub13()">-</button>
+        </center>
+        </div>
+        <!-- 2nd item -->
+        <div class="div1">
+          <img src="kit kat.jpg" height="225px" width="125px">
+          <center>
+          <h3><b>Kit Kit</b></h3>
+        </center>
+          <hr>
+          <center>
+            <strong>₹20</strong>
+            <button class="plus" onclick="add14()">+</button>
+          <h2 id="kit">0</h2>
+          <button class="minus" onclick="sub14()">-</button>
+        </center>
+        </div>
+        
+        <!-- 4rth item -->
+        <div class="div1">
+          <img src="milky bar.jpg" height="225px" width="125px">
+          <center>
+          <h3><b>Milky Bar</b></h3>
+        </center>
+          <hr>
+          <center>
+            <strong>₹30</strong>
+            <button class="plus" onclick="add15()">+</button>
+          <h2 id="milky">0</h2>
+          <button class="minus" onclick="sub15()">-</button>
+        </center>
+        </div>
+        <!-- 5th item -->
+        <div class="div1">
+          <img src="5star.jpg" height="225px" width="125px">
+          <center>
+          <h3><b>5 Star</b></h3>
+        </center>
+          <hr>
+          <center>
+            <strong>₹5</strong>
+            <button class="plus" onclick="add16()">+</button>
+          <h2 id="5star">0</h2>
+          <button class="minus" onclick="sub16()">-</button>
+        </center>
+        </div>
+        <!-- 6th item -->
+        <div class="div1">
+          <img src="munch.jpg" height="225px" width="125px">
+          <center>
+          <h3><b>Munch</b></h3>
+        </center>
+          <hr>
+          <center>
+            <strong>₹10</strong>
+            <button class="plus" onclick="add17()">+</button>
+          <h2 id="munch">0</h2>
+          <button class="minus" onclick="sub17()">-</button>
+        </center>
+        </div>
+        <!-- 7th item -->
+        <div class="div1">
+          <img src="snickers.jpg" height="225px" width="125px">
+          <center>
+          <h3><b>Snickers</b></h3>
+        </center>
+          <hr>
+          <center>
+            <strong>₹10</strong>
+            <button class="plus" onclick="add18()">+</button>
+          <h2 id="snickers">0</h2>
+          <button class="minus" onclick="sub18()">-</button>
+        </center>
+        </div></div></center></center>
+<!--section4-->
+<center>
+  <div class="section1">
+    <div class="div1">
+      <img src="milk.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Milk Bikis</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹10</strong>
+        <button class="plus" onclick="add19()">+</button>
+      <h2 id="milk">0</h2>
+      <button class="minus" onclick="sub19()">-</button>
+    </center>
+    </div>
+    <!-- 2nd item -->
+    <div class="div1">
+      <img src="tiger.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Tiger</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹10</strong>
+        <button class="plus" onclick="add20()">+</button>
+      <h2 id="tiger">0</h2>
+      <button class="minus" onclick="sub20()">-</button>
+    </center>
+    </div>
+    
+    <!-- 4rth item -->
+    <div class="div1">
+      <img src="jim jam.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Jim Jam</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹10</strong>
+        <button class="plus" onclick="add21()">+</button>
+      <h2 id="jim">0</h2>
+      <button class="minus" onclick="sub21()">-</button>
+    </center>
+    </div>
+    <!-- 5th item -->
+    <div class="div1">
+      <img src="marie gold.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Marie Gold</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹10</strong>
+        <button class="plus" onclick="add22()">+</button>
+      <h2 id="marie">0</h2>
+      <button class="minus" onclick="sub22()">-</button>
+    </center>
+    </div>
+    <!-- 6th item -->
+    <div class="div1">
+      <img src="good day.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>Good Day</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹10</strong>
+        <button class="plus" onclick="add23()">+</button>
+      <h2 id="good">0</h2>
+      <button class="minus" onclick="sub23()">-</button>
+    </center>
+    </div>
+    <!-- 7th item -->
+    <div class="div1">
+      <img src="50 50.jpg" height="225px" width="125px">
+      <center>
+      <h3><b>50 50</b></h3>
+    </center>
+      <hr>
+      <center>
+        <strong>₹10</strong>
+        <button onclick="add24()" class="plus">+</button>
+      <h2 id="ff">0</h2>
+      <button class="minus" onclick="sub24()">-</button>
+    </center>
+    </div></div></center></center>
+</div>
+<center>
+<button id="button3" onclick="check()">Add to cart</button>
+</center>
+<hr>
+<center>
+<div id="select">
+<h3>Total no.of.products /Quantity : </h3><br>
+<h4 id="quan">-</h4>
+<h3>Total Amount : </h3><br>
+<p>₹ </p><p id="amount">-</p>
+</div>
+<h3 id="h3"><a href="qr.html">BUY</h3></a></center>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
